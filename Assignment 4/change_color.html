@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change Circle Color</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px ;
+			background-color: red;
+			border:1px solid black;
+			border-radius: 50%
+		}
+	</style>
+</head>
+<body>
+     <div id="div1" onclick="Change()"></div>
+     <script type="text/javascript">
+     	function Change(){
+			var letters='0123456789ABCDEF';
+    var color='#';
+    for(var i=0;i<6;i++){
+        color+=letters[Math.floor(Math.random()*16)]
+    }
+	  element=document.getElementById('div1');
+	  element.style.backgroundColor=color;
+		 }
+     </script>
+</body>
+</html>
