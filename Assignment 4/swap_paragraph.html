@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Swap</title>
+	<script type="text/javascript">
+		function fun()
+		{
+			var x=document.getElementById("p1").innerHTML;
+			var y=document.getElementById("p2").innerHTML;
+			document.getElementById("p1").innerHTML=y;
+			document.getElementById("p2").innerHTML=x;
+		}
+	</script>
+</head>
+<body>
+	<p id="p1">"This is first line"</p>
+	<p id="p2">"This is second line"</p>
+	<input type="button" value="Swap" onclick="fun()">
+
+
+</body>
+</html>
