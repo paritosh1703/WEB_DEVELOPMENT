@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle
+    </title>
+    <style>
+        input{
+            background-color:green;
+            height: 4%;
+            width: 6%;
+            color:black;
+            
+        }
+        div{
+            margin-top: 5%;
+            margin-left: 18%;
+        }
+        img{
+            height: 50%;
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+        <img src="https://m.media-amazon.com/images/I/31jOiu7n38L.jpg" id="img1">
+        <div>
+        <input type="button" value="ON" onclick="change()" id="btn">
+        </div>
+        <script>
+            function change(){
+                var img=document.getElementById('img1')
+                var btn=document.getElementById('btn');
+                if(btn.value==="ON"){
+                img.src="https://cdn.mos.cms.futurecdn.net/8URLqwFeJihbNpn3gByhg3-1200-80.jpg";
+                btn.value="OFF";
+                }
+                else{
+                    img.src="https://m.media-amazon.com/images/I/31jOiu7n38L.jpg";
+                btn.value="ON";
+                }
+            }
+        </script>
+    
+</body>
+</html>
